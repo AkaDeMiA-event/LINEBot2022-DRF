@@ -90,7 +90,7 @@ class NumeronView(APIView):
                 return Response("This game is successfuly terminated", status=status.HTTP_200_OK)
             line_message = LineMessage(create_text_message("ゲームが始まっていません。"))
             line_message.reply(reply_token)
-            return Response("The game has not been started", status=status.HTTP_200_OK)
+            return Response("The game has not been started", status=status.HTTP_400_BAD_REQUEST)
 
         if not my_data.exists():
             reply_to_invalid_message(reply_token)
