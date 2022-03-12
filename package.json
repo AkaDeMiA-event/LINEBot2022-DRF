@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "prettier": "*",
+    "stylelint": "*",
+    "stylelint-config-recommended-scss": "*",
+    "stylelint-selector-bem-pattern": "*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "rules": {
+      "camelcase": "error",
+      "curly": "error",
+      "dot-notation": "error",
+      "eqeqeq": "error",
+      "new-cap": "error",
+      "no-var": "error",
+      "prefer-const": "error"
+    }
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": false,
+    "endOfLine": "lf",
+    "printWidth": 100,
+    "quoteProps": "as-needed",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended-scss",
+    "plugins": [
+      "stylelint-selector-bem-pattern"
+    ]
+  }
+}
