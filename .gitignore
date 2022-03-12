@@ -310,5 +310,5 @@ media/
 # Django local settings
 **/settings/local.py
 **/token.py
-**/bot_info.py
+
 
