@@ -1,5 +1,7 @@
 ### https://raw.githubusercontent.com/github/gitignore/eabb6717d9aa5e7d54945b5decd55ff86203067c/Python.gitignore
 
+
+bot_info.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
