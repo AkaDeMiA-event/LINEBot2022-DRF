@@ -131,11 +131,8 @@ def my_numeron(input_numbers, answer_numbers):
     eat = 0
     bite = 0
     for i, number in enumerate(input_numbers):
-        if number in answer_numbers:
-            if number == answer_numbers[i]:
-                eat += 1
-            else:
-                bite += 1
+        pass
+        # ここに貼り付ける
     return eat, bite
 
 
