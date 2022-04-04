@@ -18,7 +18,8 @@ SECRET_KEY = os.getenv(
 
 DEBUG = strtobool(os.environ.get("DEBUG", "n"))
 
-ALLOWED_HOSTS = [s.strip() for s in os.environ.get("ALLOWED_HOSTS", "").split(",") if s]
+# ALLOWED_HOSTS = [s.strip() for s in os.environ.get("ALLOWED_HOSTS", "").split(",") if s]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
